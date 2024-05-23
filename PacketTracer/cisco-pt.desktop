@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=/opt/packettracer/packettracer %f
+Exec=/usr/lib/packettracer/packettracer %f
 Name=Packet Tracer 8.2.2
 Icon=/opt/packettracer/art/app.png
 Terminal=false
