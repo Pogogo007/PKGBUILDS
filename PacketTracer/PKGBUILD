@@ -38,11 +38,11 @@ package() {
 	mkdir -p "${pkgdir}/usr/bin/"
 
 	find "${pkgdir}/usr/lib/packettracer/help/" -type d -exec chmod 777 {} \;
-    find "${pkgdir}/usr/lib/packettracer/saves/" -type d -exec chmod 555 {} \;
-    find "${pkgdir}/usr/lib/packettracer/art/html/network_controller/" -type d -exec chmod 775 {} \;
-    find "${pkgdir}/usr/lib/packettracer/art/RackView/CablePegboard/" -type d -exec chmod 775 {} \;
-    find "${pkgdir}/usr/lib/packettracer/bin/xcbglintegrations/" -type d -exec chmod 775 {} \;
-    find "${pkgdir}/usr/lib/packettracer/help/default/NetconRestAPI/" -type d -exec chmod 775 {} \;
+	find "${pkgdir}/usr/lib/packettracer/saves/" -type d -exec chmod 555 {} \;
+	find "${pkgdir}/usr/lib/packettracer/art/html/network_controller/" -type d -exec chmod 775 {} \;
+	find "${pkgdir}/usr/lib/packettracer/art/RackView/CablePegboard/" -type d -exec chmod 775 {} \;
+	find "${pkgdir}/usr/lib/packettracer/bin/xcbglintegrations/" -type d -exec chmod 775 {} \;
+	find "${pkgdir}/usr/lib/packettracer/help/default/NetconRestAPI/" -type d -exec chmod 775 {} \;
 
 	ln -s /usr/lib/packettracer/packettracer "${pkgdir}/usr/bin/packettracer"
 
