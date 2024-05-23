@@ -36,6 +36,13 @@ package() {
 	chmod a+x "${pkgdir}/usr/share/applications/cisco-pt.desktop"
 	chmod a+x "${pkgdir}/usr/share/applications/cisco-ptsa.desktop"
 	mkdir -p "${pkgdir}/usr/bin/"
+	mkdir -p "${pkgdir}/usr/share/icons/hicolor/48x48/mimetypes"
+	mv "${pkgdir}/usr/share/icons/gnome/48x48/mimetypes/pka.png" "${pkgdir}/usr/share/icons/hicolor/48x48/mimetypes/application-x-pka.png"
+	mv "${pkgdir}/usr/share/icons/gnome/48x48/mimetypes/pks.png" "${pkgdir}/usr/share/icons/hicolor/48x48/mimetypes/application-x-pks.png"
+	mv "${pkgdir}/usr/share/icons/gnome/48x48/mimetypes/pksz.png" "${pkgdir}/usr/share/icons/hicolor/48x48/mimetypes/application-x-pksz.png"
+	mv "${pkgdir}/usr/share/icons/gnome/48x48/mimetypes/pkt.png" "${pkgdir}/usr/share/icons/hicolor/48x48/mimetypes/application-x-pkt.png"
+	mv "${pkgdir}/usr/share/icons/gnome/48x48/mimetypes/pkz.png" "${pkgdir}/usr/share/icons/hicolor/48x48/mimetypes/application-x-pkz.png"
+	rmdir -p "${pkgdir}/usr/share/icons/gnome/48x48/mimetypes"
 
 	find "${pkgdir}/usr/lib/packettracer/help/" -type d -exec chmod 777 {} \;
 	find "${pkgdir}/usr/lib/packettracer/saves/" -type d -exec chmod 555 {} \;
